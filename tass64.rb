@@ -15,12 +15,8 @@ class Tass64 < Formula
   homepage "http://singularcrew.hu/64tass/"
 
   stable do
-    url "http://downloads.sourceforge.net/project/tass64/source/64tass-1.53.1515-src.zip"
-    sha256 "f18e5d3f7f27231c1f8ce781eee8b585fe5aaec186eccdbdb820c1b8c323eb6c"
-
-    # Patch Makefile to define _XOPEN_SOURCE in CFLAGS
-    # to fix compilation on Darwin. 
-    patch :p2, :DATA
+    url "https://sourceforge.net/projects/tass64/files/source/64tass-1.54.1864-src.zip"
+    sha256 "3704049838815c29de5cf4ec6fcd1fb5c08942646705b61c0b89e73ef218d0b6"
   end
 
   head do
@@ -38,25 +34,3 @@ class Tass64 < Formula
 end
 
 __END__
-diff --git a/64tass-1.53.1515-src/Makefile b/64tass-1.53.1515-src.new/Makefile
-index 809477a..7a47325 100644
---- a/64tass-1.53.1515-src/Makefile
-+++ b/64tass-1.53.1515-src.new/Makefile
-@@ -8,7 +8,7 @@ OBJ = 64tass.o opcodes.o str.o avl.o my_getopt.o eval.o error.o section.o \
- LDLIBS = -lm
- LANG = C
- REVISION := "1515?"
--CFLAGS = -O2 -DREVISION="\"$(REVISION)\""
-+CFLAGS = -O2 -D_XOPEN_SOURCE=600 -DREVISION="\"$(REVISION)\""
- LDFLAGS =
- CFLAGS += $(LDFLAGS)
- TARGET = 64tass
-@@ -16,7 +16,7 @@ RM = rm -f
- INSTALL = /usr/bin/install -c
- INSTALL_PROGRAM = $(INSTALL)
- INSTALL_DATA = $(INSTALL) -m 644
--prefix = /usr/local
-+#prefix = /usr/local
- exec_prefix = $(prefix)
- bindir = $(exec_prefix)/bin
- datarootdir = $(prefix)/share
