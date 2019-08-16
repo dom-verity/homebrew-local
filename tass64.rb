@@ -15,8 +15,8 @@ class Tass64 < Formula
   homepage "http://singularcrew.hu/64tass/"
 
   stable do
-    url "https://sourceforge.net/projects/tass64/files/source/64tass-1.54.1864-src.zip"
-    sha256 "3704049838815c29de5cf4ec6fcd1fb5c08942646705b61c0b89e73ef218d0b6"
+    url "https://sourceforge.net/projects/tass64/files/source/64tass-1.54.1900-src.zip"
+    sha256 "5bf28dfcc7631a20a3ed7e308a50fe219d8a6417ad59d1d1162836ec3a1506ee"
   end
 
   head do
