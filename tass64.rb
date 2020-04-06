@@ -17,6 +17,7 @@ class Tass64 < Formula
   stable do
     url "https://sourceforge.net/projects/tass64/files/source/64tass-1.55.2176-src.zip"
     sha256 "17ee62fcb5e47c73a29abbac2c276e68474e4332ad97d14e35ba52c9075ad759"
+    version "1.55.2176"
   end
 
   head do
