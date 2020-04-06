@@ -12,7 +12,7 @@
 
 class Tass64 < Formula
   desc "Cross assembler targeting 65xx series processors with Omikron TASS syntax."
-  homepage "http://singularcrew.hu/64tass/"
+  homepage "http://tass64.sourceforge.net"
 
   stable do
     url "https://sourceforge.net/projects/tass64/files/source/64tass-1.55.2176-src.zip"
