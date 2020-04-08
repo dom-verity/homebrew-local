@@ -14,7 +14,6 @@ class WasmPack < Formula
   desc "Rust → WebAssembly workflow tool."
   homepage "https://github.com/rustwasm/wasm-pack"
   url "https://github.com/rustwasm/wasm-pack/releases/download/v0.9.1/wasm-pack-v0.9.1-x86_64-apple-darwin.tar.gz"
-  version "0.9.1"
   sha256 "a98c70f0a40b1689eeaf639611ec6b18d0a73abb4a881533c8e0c2861457440f"
 
   def install
